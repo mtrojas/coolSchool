@@ -1,0 +1,13 @@
+ <div  class="container">
+	<div class="item">
+		<input placeholder="email" [(ngModel)]="auth.username" type="email" required>
+	</div>
+	<div class="item">
+		<input placeholder="contraseña" [(ngModel)]="auth.password"  type="password" required>
+	</div>
+	<div class="item">
+		<button type="button" class="btn btn-secondary btn-lg" (click)="handleLogin()">Entrar</button>
+	</div>
+</div>
+
+

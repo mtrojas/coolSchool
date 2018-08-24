@@ -1,0 +1,14 @@
+<div class="container">
+
+  <div class="title">
+    <h1>Students</h1>
+  </div>
+<div class="items" *ngFor="let student of students">
+    {{student | json}}
+  {{student.first_name}}
+  <button [routerLink]="['/student', student.id]">more</button>
+</div>
+</div>
+
+<a [routerLink]="['']">Back home</a>
+

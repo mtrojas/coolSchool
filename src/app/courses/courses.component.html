@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="title">
+    <h1>Our Courses</h1>
+  </div>
+<div class="items" *ngFor="let course of courses">
+    {{course | json}}
+  {{course.name}}
+  <button [routerLink]="['/course', course.id]">more</button>
+</div>
+</div>
+
+<a [routerLink]="['']">Back home</a>
